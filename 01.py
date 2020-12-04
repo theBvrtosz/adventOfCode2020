@@ -15,8 +15,8 @@ def part2_solution(inp):
 
 
 if __name__ == "__main__":
-    with open("01.in", 'r') as input:
-        inp = [int(line) for line in input]
+    with open("01.in", 'r') as f:
+        inp = [int(line) for line in f]
 
     print("part1 {}".format(part1_solution(inp)))
     print("part2 {}".format(part2_solution(inp)))
