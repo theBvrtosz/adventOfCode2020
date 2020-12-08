@@ -67,10 +67,8 @@ def validate_passport(passport):
         if item != 'cid':
             is_field_valid = validation_dict[item](value) 
             valid_set.add(is_field_valid)
-        present_items.add(item)
+            present_items.add(item)
 
-    present_items.discard('cid')
-    
     return valid_set == {True} and present_items == mandatory_items
 
 
